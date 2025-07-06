@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    font-family: 'VT323', monospace;
+}
+
+.dark-theme {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2vh 2vw;
+}
+
+.flicker-text {
+    text-align: center;
+    font-size: 8vh;
+    color: rgb(204, 9, 9);
+    animation: blink 1s infinite;
+    font-family: 'Creepster', cursive;
+    margin-bottom: 2vh;
+}
+
+.input-container,
+.button-container,
+.result-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 10px;
+    background: transparent;
+    padding: 1.5vh 2vw;
+    color: tomato;
+    width: 80%;
+    font-size: 4vh;
+    font-family: 'VT323', monospace;
+    margin-bottom: 2vh;
+}
+
+button {
+    background: transparent;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: rgb(204, 9, 9);
+    width: 60%;
+    padding: 1.5vh 2vw;
+    font-family: 'Creepster', cursive;
+    font-size: 3.5vh;
+}
+
+button:hover {
+    background-color: rgba(204, 9, 9, 0.1);
+    cursor: pointer;
+}
+
+hr {
+    width: 95%;
+    border: 2px solid red;
+    border-radius: 10px;
+    margin: 2vh 0;
+}
+
+.result-container {
+    flex: 1;
+    overflow-y: auto;
+    width: 100%;
+    padding: 1vh;
+    font-size: 3vh;
+}
+
+#results p {
+    margin-bottom: 1vh;
+    text-align: center;
+    color: #ff4444;
+    font-family: 'VT323', monospace;
+}
+
+#results em {
+    color: #888;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.footer {
+    text-align: center;
+    font-size: 2.2vh;
+    color: #666;
+    margin-top: auto;
+    padding: 1vh 0;
+    font-family: 'VT323', monospace;
+    width: 100%;
+}
+
+.coder {
+    color: #ff4444;
+    font-family: 'Creepster', cursive;
+}

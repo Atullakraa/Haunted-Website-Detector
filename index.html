@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=VT323&display=swap" rel="stylesheet">
+<div class="dark-theme">
+    <div class="flicker-text">Haunted Website Detector</div>
+    <div class="input-container">
+        <input type="text" id="urlInput" placeholder="Enter a suspicious URL..." />
+    </div>
+    <div class="button-container">
+        <button id="scanBtn">BEGIN GHOST SCAN</button>
+    </div>
+    <hr>
+    <div class="result-container">
+        <div id="results" style="display:none; margin-top:20px;"></div>
+    </div>
+    <footer class="footer">
+        © 2025 HauntedScan Inc. 👻 All Rights Feared. &nbsp;|&nbsp; Coded by <span class="coder">41ul</span>
+    </footer>  
+</div>
+
+<script>
+    const scanBtn = document.getElementById("scanBtn");
+    const resultsDiv = document.getElementById("results");
+
+    const hauntedMessages = [
+        "👻 Ghost Presence: Detected",
+        "☠️ Cursed Script Found: /haunt.js",
+        "🧟‍♂️ Zombie Tracker Beacon Activated",
+        "🕷️ Shadow Entity: #404_SHADOW",
+        "🔪 Possessed Cookies Identified",
+        "📡 EMF Spike near /admin/",
+        "📁 Paranormal Cache Detected",
+        "🔒 Hex-Cursed SSL Found",
+        "👁️ Site is being watched...",
+        "🧠 Mental interference in metadata",
+    ];
+
+    function glitchText(text) {
+        const chars = "!@#$%^&*()_+=-{}[]<>?";
+        return text.split('').map(char =>
+            Math.random() < 0.1 ? chars[Math.floor(Math.random() * chars.length)] : char
+        ).join('');
+    }
+
+    function simulateScan() {
+        const enteredURL = document.getElementById("urlInput").value.trim();
+        if (!enteredURL) {
+            alert("Please enter a URL first.");
+            return;
+        }
+
+        resultsDiv.style.display = "block";
+        resultsDiv.innerHTML = "<p>🔍 Scanning for ghosts...</p>";
+
+        setTimeout(() => {
+            resultsDiv.innerHTML = "";
+            let numResults = 3 + Math.floor(Math.random() * 3); // 3–5 messages
+            for (let i = 0; i < numResults; i++) {
+                let msg = hauntedMessages[Math.floor(Math.random() * hauntedMessages.length)];
+                let p = document.createElement("p");
+                p.textContent = glitchText(msg);
+                p.style.color = "#ff4444";
+                p.style.fontFamily = "VT323, monospace";
+                p.style.marginBottom = "5px";
+                resultsDiv.appendChild(p);
+            }
+
+            // Add final warning
+            let finalNote = document.createElement("p");
+            finalNote.innerHTML = "<em>Don’t trust everything on the internet...</em> 👁️";
+            finalNote.style.marginTop = "15px";
+            finalNote.style.color = "#888";
+            resultsDiv.appendChild(finalNote);
+
+        }, 2500); // Scan delay
+    }
+
+    scanBtn.addEventListener("click", simulateScan);
+</script>
