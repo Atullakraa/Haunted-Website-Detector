@@ -1,53 +1,37 @@
-👻 Haunted Website Detector
-A spooky web app that pretends to scan suspicious websites for paranormal activity, cursed scripts, ghost trackers, and more. Built for fun, with creepy visuals and flickering text effects.
+# 👻 Haunted Website Detector
 
-![image](https://github.com/user-attachments/assets/ce62af91-56ba-4156-9323-cbd15fb78959)
+A spooky web app that pretends to scan suspicious websites for ghostly entities, cursed scripts, EMF spikes, and more. Inspired by the supernatural, this fun project adds a creepy twist to traditional site scanning — purely for entertainment.
 
-🕷️ Features
-Creepy retro horror theme with flickering Creepster text
+![image](https://github.com/user-attachments/assets/96abdf46-611d-4da9-9a18-194e50e1798e)
 
-Simulated haunted URL scanning
 
-Random ghosty messages like:
+---
 
-☠️ Cursed Script Found: /haunt.js
+## 🕷️ Features
 
-📡 EMF Spike near /admin/
+- ⚡ **Flickering Retro UI** — built with horror fonts and dark visuals
+- 🔍 **Simulated Ghost Scanner** — click to "scan" URLs for creepy fake alerts
+- 👻 **Random Haunted Warnings** — from possessed cookies to cursed metadata
+- 🔤 **Glitch Text Generator** — distorts messages to mimic supernatural interference
+- 🖥️ **Responsive Design** — works on both desktop and mobile
+- 💀 **No Backend Required** — fully client-side
 
-👻 Ghost Presence: Detected
+---
 
-Glitchy output text to increase the spooky factor
+## 📸 Preview
 
-Mobile-friendly and lightweight
+![image](https://github.com/user-attachments/assets/6240eec2-edd9-48b7-9457-440f580acff4)
 
-🚀 How to Run
-Clone this repo:
 
-bash
-Copy
-Edit
+---
+
+## 🚀 Getting Started
+
+You can either clone the repo or just download and open the HTML file in your browser.
+
+### 🔧 Local Setup
+
+```bash
 git clone https://github.com/your-username/haunted-website-detector.git
-Open index.html in your browser.
-
-That’s it! No backend, no setup.
-
-💀 Tech Stack
-HTML5
-
-CSS3
-
-Vanilla JavaScript
-
-Google Fonts (Creepster + VT323)
-
-🎃 Demo
-Try it live: https://your-username.github.io/haunted-website-detector
-(Replace with real GitHub Pages link if deployed)
-
-👨‍💻 Author
-Coded by 41ul 👾
-🔗 Instagram: off
-📍 Location: HauntedScan Inc.
-
-⚠️ Disclaimer
-This is purely a fun/spoof project. It does not actually scan websites or detect anything real.
+cd haunted-website-detector
+```
